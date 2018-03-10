@@ -197,7 +197,7 @@ WML_DEPLOYMENT_ID=
 
 ![Watson ML Service Credentials](https://raw.githubusercontent.com/ibm-watson-data-lab/watson-ml-model-utils-nodejs/master/readme/img/watson-ml-credentials.png)
 
-3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID`:
+3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID` (required for scoring, not for continuous learning):
   - Click your model under _Models_ in the _Assets_ tab in your Data Science Platform or Watson Data Platform account
   - Click the _Deployments_ tab
   - Click the deployment
