@@ -12,6 +12,9 @@ class WatsonMLModelEndpoint {
     if (! fields) {
       throw 'fields not specified.';
     }
+    if (! options) {
+      options = {};
+    }
     // attempt to load Watson ML credentials from VCAP_SERVICES
     if (process.env.VCAP_SERVICES) {
       let vcapServices = JSON.parse(process.env.VCAP_SERVICES);
