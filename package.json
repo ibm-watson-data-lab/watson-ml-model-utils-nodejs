@@ -1,0 +1,32 @@
+{
+  "name": "watson-ml-model-utils",
+  "version": "0.0.1",
+  "description": "A simple Node.js wrapper for Watson ML scoring and continuous learning feedback entry and evaluation",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibm-watson-data-lab/watson-ml-model-utils-nodejs.git"
+  },
+  "keywords": [
+    "watson",
+    "ml",
+    "machine learning",
+    "model",
+    "deployment",
+    "continuous learning",
+    "feedback"
+  ],
+  "author": "Mark Watson <markwats@us.ibm.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ibm-watson-data-lab/watson-ml-model-utils-nodejs/issues"
+  },
+  "homepage": "https://github.com/ibm-watson-data-lab/watson-ml-model-utils-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "dotenv": "^4.0.0"
+  }
+}
