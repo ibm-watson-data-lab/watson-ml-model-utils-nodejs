@@ -13,13 +13,7 @@ class WatsonMLLearningEndpoint extends WatsonMLModelEndpoint {
     super(fields, options);
   }
 
-  _onModelIdSet() {
-    this.feedbackUrl = `${this.servicePath}/v3/wml_instances/${this.instanceId}/published_models/${this.modelId}/feedback`
-    this.iterationUrl = `${this.servicePath}/v3/wml_instances/${this.instanceId}/published_models/${this.modelId}/learning_iterations`
-    return Promise.resolve();
-  }
-
-  startFeedbackEvaluation(values) {
+  startFeedbackEvaluation() {
     this.tokenFailures = 0;
     return this._startFeedbackEvaluation(0);
   }
@@ -109,6 +103,12 @@ class WatsonMLLearningEndpoint extends WatsonMLModelEndpoint {
           return Promise.reject(err);
         }
       });
+  }
+
+  _onModelIdSet() {
+    this.feedbackUrl = `${this.servicePath}/v3/wml_instances/${this.instanceId}/published_models/${this.modelId}/feedback`
+    this.iterationUrl = `${this.servicePath}/v3/wml_instances/${this.instanceId}/published_models/${this.modelId}/learning_iterations`
+    return Promise.resolve();
   }
 }
 
