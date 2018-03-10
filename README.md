@@ -2,8 +2,6 @@
 
 Note: This is a work in progress. Use exact versions when installing (e.g. --save-exact) as backwards-incompatible changes may be introduced.
 
-_*When stable, this repository will replace https://github.com/ibm-watson-data-lab/watson-ml-scoring-util-nodejs*_
-
 ## Overview
 
 This is a simple Node.js wrapper for calling scoring endpoints, providing feedback, and starting feedback evaluation on deployed models in the Watson Machine Learning service.
