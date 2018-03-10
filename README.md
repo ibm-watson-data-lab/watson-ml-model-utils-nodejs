@@ -197,7 +197,7 @@ WML_DEPLOYMENT_ID=
 
 ![Watson ML Service Credentials](https://raw.githubusercontent.com/ibm-watson-data-lab/watson-ml-model-utils-nodejs/master/readme/img/watson-ml-credentials.png)
 
-3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID` (required for scoring, not for continuous learning):
+3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID` (required for scoring only, not continuous learning):
   - Click your model under _Models_ in the _Assets_ tab in your Data Science Platform or Watson Data Platform account
   - Click the _Deployments_ tab
   - Click the deployment
@@ -230,7 +230,7 @@ env:
 2. Specify the name of your Watson Machine Learning Service
   - Replace `IBM Watson Machine Learning` under *services:* with the name of the Watson Machine Learning service provisioned in your account
 
-3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID`:
+3. Fill in `WML_MODEL_ID` and `WML_DEPLOYMENT_ID` (required for scoring only, not continuous learning):
   - Click your model under _Models_ in the _Assets_ tab in your Data Science Platform or Watson Data Platform account
   - Click the _Deployments_ tab
   - Click the deployment
